@@ -98,7 +98,6 @@ header {
   height: 60vh;
   background: url(/assets/img/main-banner_bg.jpg) 100% 100% no-repeat;
   background-size: cover;
-
 }
 
 .top-banner p {
@@ -576,4 +575,57 @@ footer {
 .catalog-item .link-more::after {
   margin-left: 8px;
   content: url(/assets/img/arrow-more.svg);
+}
+
+/* СТРАНИЦА АГЕНСТВА */
+.banner-agency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+.agency-information {
+  position: relative;
+}
+
+.agency-container {
+  background-color: #FFFFFF;
+  padding: calc(64px + (85 - 64) * ((100vw - 1440px) / (1920 - 1440))) calc(77px + (103 - 77) * ((100vw - 1440px) / (1920 - 1440)));
+  margin-top: -40vh;
+}
+
+.agency-container .top {
+  display: flex;
+  grid-column-gap: 40px;
+}
+
+.agency-container .top .logo-agency img {
+  
+}
+
+.agency-container .top .description {
+  font-size: calc(16px + (18 - 16) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.agency-container .top .description h2 {
+  font-size: calc(48px + (64 - 48) * ((100vw - 1440px) / (1920 - 1440)));
+  color: #000000;
+}
+
+.agency-container .top .description span {
+  color: #1AB0CF;
+}
+
+.portfolio {}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: calc(33px + (44 - 33) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.portfolio-item img {
+  width: 100%;
+  margin-bottom: 10px;
 }
