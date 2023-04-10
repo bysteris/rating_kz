@@ -38,6 +38,14 @@ p>a {
   text-decoration: underline;
 }
 
+.wrapper {
+  padding: 0 calc(270px + (360 - 270) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.wrapper-bigger {
+  padding: 0 calc(425px + (567 - 425) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
 .block-margin-top {
   margin-top: calc(64px + (85 - 64) * ((100vw - 1440px) / (1920 - 1440)));
 }
@@ -85,10 +93,6 @@ header {
 
 .header-content .lang a {
   text-decoration: underline;
-}
-
-.wrapper {
-  padding: 0 calc(270px + (360 - 270) * ((100vw - 1440px) / (1920 - 1440)));
 }
 
 .top-banner {
@@ -181,42 +185,42 @@ header {
 }
 
 /* БУДУЩИЕ ФЕСТИВАЛИ */
-.festivals {
+.festivals-block {
   background-color: #03112C;
   color: #FFFFFF;
   margin-top: calc(68px + (85 - 68) * ((100vw - 1440px) / (1920 - 1440)));
 }
 
-.festivals h2 {
+.festivals-block h2 {
   color: #FFFFFF;
 }
 
-.festivals_container {
+.festivals-block_container {
   padding: calc(64px + (85 - 64) * ((100vw - 1440px) / (1920 - 1440))) 0;
 }
 
-.festivals-items {
+.festivals-block-items {
   position: relative;
   display: flex;
 }
 
-.festivals-items.slick-slider {
+.festivals-block-items.slick-slider {
   margin-bottom: 0;
 }
 
-.festivals-item {
+.festivals-block-item {
   display: flex;
   flex-direction: column;
   margin: 0 calc(15px + (20 - 15) * ((100vw - 1440px) / (1920 - 1440)));
 }
 
-.festivals-item img {
+.festivals-block-item img {
   width: 100%;
   margin-bottom: calc(13px + (17 - 13) * ((100vw - 1440px) / (1920 - 1440)));
 }
 
-.festivals-items .slick-prev,
-.festivals-items .slick-next {
+.festivals-block-items .slick-prev,
+.festivals-block-items .slick-next {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -228,19 +232,19 @@ header {
   -o-transform: translateY(-3.5vh);
 }
 
-.festivals-items .slick-prev {
+.festivals-block-items .slick-prev {
   left: calc(-216px + (-290 - (-216)) * ((100vw - 1440px) / (1920 - 1440)));
 }
 
-.festivals-items .slick-next {
+.festivals-block-items .slick-next {
   right: calc(-216px + (-290 - (-216)) * ((100vw - 1440px) / (1920 - 1440)));
 }
 
-.festivals-items .slick-prev::before {
+.festivals-block-items .slick-prev::before {
   content: url(/assets/img/arrow-left.svg);
 }
 
-.festivals-items .slick-next::before {
+.festivals-block-items .slick-next::before {
   content: url(/assets/img/arrow-left.svg);
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -600,9 +604,7 @@ footer {
   grid-column-gap: 40px;
 }
 
-.agency-container .top .logo-agency img {
-  
-}
+.agency-container .top .logo-agency img {}
 
 .agency-container .top .description {
   font-size: calc(16px + (18 - 16) * ((100vw - 1440px) / (1920 - 1440)));
@@ -621,11 +623,141 @@ footer {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: calc(33px + (44 - 33) * ((100vw - 1440px) / (1920 - 1440)));
 }
 
 .portfolio-item img {
   width: 100%;
   margin-bottom: 10px;
+}
+
+.agency-video {
+  background-color: #f0f0f0;
+}
+
+.agency-video_container {
+  padding: calc(64px + (85 - 64) * ((100vw - 1440px) / (1920 - 1440))) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agency-video_container h2 {
+  text-align: center;
+}
+
+.agency-video_container video {
+  width: 45vw;
+}
+
+/* СТРАНИЦА РЕЙТИНГА */
+.rating {}
+
+.rating_container {}
+
+.rating-table {
+  display: grid;
+  margin: calc(64px + (85 - 64) * ((100vw - 1440px) / (1920 - 1440))) 0;
+}
+
+.rating-table_header {
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.rating-table_body {}
+
+.rating-table_row {
+  display: grid;
+  grid-template-columns: repeat(1, 0.8fr) repeat(1, 4fr) repeat(4, 1fr);
+  padding: calc(12px + (16 - 12) * ((100vw - 1440px) / (1920 - 1440)));
+  font-size: calc(12px + (16 - 12) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.rating-table_cell:not(:nth-child(2)) {
+  text-align: center;
+}
+
+/* СТРАНИЦА ФЕСТИВАЛИ/МЕРОПРИЯТИЯ */
+.festivals {}
+
+.festivals_container {
+  background-color: #FFFFFF;
+  padding: calc(64px + (85 - 64) * ((100vw - 1440px) / (1920 - 1440))) calc(77px + (103 - 77) * ((100vw - 1440px) / (1920 - 1440)));
+  margin-top: -40vh;
+}
+
+.festivals_container .top {
+  margin-bottom: calc(85px + (107 - 85) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.festivals_container .top h2 {
+  margin-bottom: calc(64px + (85 - 64) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.festivals .top-description {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  justify-content: space-between;
+}
+
+.festivals .top-description .left {
+  font-size: calc(15px + (20 - 15) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.festivals .top-description .right span {
+  color: #1AB0CF;
+}
+
+.festivals-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: calc(20px + (26 - 20) * ((100vw - 1440px) / (1920 - 1440)));
+  grid-row-gap: calc(34px + (43 - 34) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.card-item img {
+  width: 100%;
+}
+
+.card-item p {
+  margin-top: 10px;
+  font-size: calc(12px + (16 - 12) * ((100vw - 1440px) / (1920 - 1440)));
+}
+
+.festivals-list_container ol>li {
+  line-height: 1.9;
+}
+
+.festivals-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.festivals-link img {
+  width: 100%;
+}
+
+.festivals-link a {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: calc(30px + (40 - 30) * ((100vw - 1440px) / (1920 - 1440)));
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* СТРАНИЦА КОНТАКТЫ */
+.page-contacts {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.page-contacts .footer-container_bottom {
+  position: absolute;
+  bottom: calc(50px + (68 - 50) * ((100vw - 1440px) / (1920 - 1440)));
+
 }
