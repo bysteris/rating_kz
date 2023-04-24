@@ -1,4 +1,4 @@
-@media (max-width:1070px) {
+@media (max-width:1080px) {
     body {
         font-size: calc(10px + (14 - 10) * ((100vw - 1024px) / (1440 - 1024)));
     }
@@ -30,7 +30,7 @@
 
     .header-content .logo img {
         width: 100%;
-        max-width: 80px;
+        max-width: calc(80px + (112 - 80) * ((100vw - 1024px) / (1440 - 1024)));
     }
 
     .header-content .menu ul>li:not(:last-child) {
@@ -61,7 +61,7 @@
 
     .our-mission_container .right img {
         width: 100%;
-        max-width: 254px;
+        max-width: calc(254px + (358 - 254) * ((100vw - 1024px) / (1440 - 1024)));
     }
 
     /* КАК ПОПАСТЬ В КАТАЛОГ */
@@ -162,7 +162,7 @@
     }
 
     .form-checkbox p {
-        font-size: 10px;
+        font-size: calc(10px + (12 - 10) * ((100vw - 1024px) / (1440 - 1024)));
         margin-left: 10px;
     }
 
@@ -243,7 +243,10 @@
     }
 
     .catalog-item .link-more::after {
+        margin-bottom: 0vh;
         margin-left: 4px;
+        width: calc(8px + (10 - 8) * ((100vw - 1024px) / (1440 - 1024)));
+        height: calc(8px + (10 - 8) * ((100vw - 1024px) / (1440 - 1024)));
     }
 
     /* СТРАНИЦА АГЕНСТВА */
@@ -324,9 +327,785 @@
     }
 
     /* СТРАНИЦА КОНТАКТЫ */
-    .page-contacts .footer-container_bottom {
+    /* .page-contacts .footer-container_bottom {
         bottom: calc(35px + (50 - 35) * ((100vw - 1024px) / (1440 - 1024)));
+    } */
+}
+
+@media (max-width: 820px) {
+    body {
+        font-size: calc(20px + (10 - 20) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    h2 {
+        margin-bottom: calc(30px + (14 - 30) * ((100vw - 768px) / (1024 - 768)));
+        font-size: calc(32px + (19 - 32) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .wrapper {
+        padding: 0 calc(54px + (192 - 54) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .wrapper-bigger {
+        padding: 0 calc(54px + (302 - 54) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .block-margin-top {
+        margin-top: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .header-wrapper {
+        padding: calc(16px + (15 - 16) * ((100vw - 768px) / (1024 - 768))) calc(54px + (27 - 54) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .header-content .burger-btn {
+        display: flex;
+    }
+
+    .header-content .logo img {
+        width: 100%;
+        max-width: calc(100px + (80 - 100) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .header-content .menu ul>li {
+        display: none;
+        margin: 15px 0;
+    }
+
+    .header-content .menu ul>li:not(:last-child) {
+        margin-right: unset;
+       
+    }
+
+    .header-content .lang {
+        margin-left: auto;
+    }
+
+    .top-banner {
+        height: 35vh;
+    }
+
+    .top-banner_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-banner_container .left {
+        font-size: calc(24px + (15 - 24) * ((100vw - 768px) / (1024 - 768)));
+        padding-left: calc(14px + (20 - 14) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .top-banner_container .right {
+        max-width: unset;
+        margin-top: 30px;
+        font-size: calc(16px + (10 - 16) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* НАША  МИССИЯ */
+    .our-mission_container .left {
+        width: 100%;
+    }
+
+    .our-mission_container .right {
+        display: none;
+    }
+
+    /* КАК ПОПАСТЬ В КАТАЛОГ */
+    .how-into-catalog_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .methods-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: calc(40px + (20 - 40) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .methods-item span {
+        padding: 10px 18px;
+        margin-bottom: 22px;
+        font-size: calc(24px + (10 - 24) * ((100vw - 768px) / (1024 - 768)));
+        width: calc(52px + (20 - 52) * ((100vw - 768px) / (1024 - 768)));
+        height: calc(52px + (20 - 52) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* ПРАВИЛА ЧЛЕНСТВА В АССОЦИАЦИИ */
+    .membership_container .text {
+        max-width: unset;
+    }
+
+    /* БУДУЩИЕ ФЕСТИВАЛИ */
+    .festivals-block {
+        margin-top: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .festivals-block_container {
+        padding: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768))) 0;
+    }
+
+    .festivals-block-item {
+        margin: 0 calc(30px + (10 - 30) * ((100vw - 768px) / (1024 - 768)));
+        font-size: calc(18px + (20 - 18) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .festivals-block-item img {
+        margin-bottom: 14px;
+    }
+
+    .festivals-block-items .slick-prev {
+        left: calc(-20px + (-168 - (-20)) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .festivals-block-items .slick-next {
+        right: calc(-20px + (-168 - (-20)) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* НАШИ ПАРТНЕРЫ */
+    .our-partners h2 {
+        margin-bottom: calc(72px + (35 - 72) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .marquee img {
+        max-width: 235px;
+    }
+
+    /* Форма */
+    .form {
+        padding: calc(85px + (20 - 85) * ((100vw - 768px) / (1024 - 768))) calc(107px + (55 - 107) * ((100vw - 768px) / (1024 - 768)));
+        flex-direction: column;
+    }
+
+    .form .left {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 45px;
+    }
+
+    .form .left h3 {
+        margin-bottom: 22px;
+        font-size: calc(37px + (20 - 37) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .form .left span {
+        width: 100%;
+    }
+
+    .form-feedback {
+        flex-direction: column;
+    }
+
+    .form-control_container {
+        display: block;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-control:nth-child(1) {
+        margin-right: unset;
+    }
+
+    .checkbox-container {
+        margin-top: unset;
+    }
+
+    .form-checkbox input {
+        height: 12px;
+        width: 12px;
+    }
+
+    .form-checkbox input::before {
+        width: 12px;
+        height: 12px;
+    }
+
+    .form-checkbox input::after {
+        height: 12px;
+        width: 12px;
+    }
+
+    .form-checkbox input:checked::after {
+        opacity: 1;
+    }
+
+    .form-checkbox p {
+        font-size: calc(14px + (10 - 14) * ((100vw - 768px) / (1024 - 768)));
+        margin-left: 10px;
+    }
+
+    .form_btn-container {
+        margin-left: unset;
+        margin-top: 30px;
+    }
+
+    .form-btn {
+        padding: calc(14px + (8 - 14) * ((100vw - 768px) / (1024 - 768))) calc(40px + (20 - 40) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* FOOTER */
+    footer {
+        padding: calc(54px + (25 - 54) * ((100vw - 768px) / (1024 - 768))) 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container .left {
+        width: 80%;
+    }
+
+    .footer-container .right {
+        margin: 15vh 0;
+    }
+
+    .link-items {
+        grid-column-gap: calc(20px + (42 - 20) * ((100vw - 768px) / (1024 - 768)));
+        grid-row-gap: calc(72px + (25 - 72) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .link-item {
+        max-width: calc(210px + (110 - 210) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .link-item p {
+        padding-left: calc(15px + (10 - 15) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .link-item a {
+        font-size: calc(16px + (10 - 16) * ((100vw - 768px) / (1024 - 768)));
+        padding-left: calc(15px + (10 - 15) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .footer-container_bottom {
+        margin-top: unset;
+        font-size: calc(16px + (10 - 16) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .footer-container_bottom a {
+        margin-left: calc(102px + (30 - 102) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* СТРАНИЦА КАТАЛОГ АГЕНСТВ */
+    .tabs-item {
+        padding: calc(10px + (8 - 10) * ((100vw - 768px) / (1024 - 768))) 0;
+        font-size: calc(12px + (10 - 12) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .catalog-container {
+        padding: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768))) calc(50px + (55 - 50) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .catalog-item {
+        flex-direction: column;
+        padding: calc(30px + (10 - 30) * ((100vw - 768px) / (1024 - 768))) 0;
+    }
+
+    .catalog-item img {
+        margin-right: unset;
+        width: calc(155px + (90 - 155) * ((100vw - 768px) / (1024 - 768)));
+        margin-bottom: 35px;
+    }
+
+    .catalog-item .text .name-agent {
+        margin-bottom: 15px;
+    }
+
+    .catalog-item .text p {
+        max-width: unset;
+        font-size: 16px;
+    }
+
+    .catalog-item .link-more {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .catalog-item .link-more::after {
+        margin-bottom: 0.4vh;
+        margin-left: 8px;
+        width: calc(15px + (8 - 15) * ((100vw - 768px) / (1024 - 768)));
+        height: calc(15px + (8 - 15) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* СТРАНИЦА АГЕНСТВА */
+    .agency-container {
+        padding: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768))) calc(50px + (55 - 50) * ((100vw - 768px) / (1024 - 768)));
+        margin-top: -25vh;
+    }
+
+    .agency-container .top {
+        flex-direction: column;
+        grid-column-gap: 20px;
+    }
+
+    .agency-container .top .logo-agency img {
+        max-width: 155px;
+    }
+
+    .agency-container .top .description {
+        font-size: calc(20px + (12 - 20) * ((100vw - 768px) / (1024 - 768)));
+        line-height: 1.2;
+    }
+
+    .agency-container .top .description h2 {
+        font-size: calc(32px + (34 - 32) * ((100vw - 768px) / (1024 - 768)));
+        margin-top: 40px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: calc(17px + (22 - 17) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .portfolio-item img {
+        margin-bottom: 14px;
+    }
+
+    .portfolio-item p {
+        font-size: calc(16px + (10 - 16) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .agency-video_container {
+        padding: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768))) 0;
+    }
+
+    .agency-video_container video {
+        width: 100%;
+    }
+
+    /* СТРАНИЦА РЕЙТИНГА */
+    .rating-table {
+        margin: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768))) 0;
+    }
+
+    .rating-table_row {
+        grid-template-columns: repeat(1, 0.6fr) repeat(1, 2fr) repeat(4, 1fr);
+        padding: 10px;
+        font-size: calc(14px + (10 - 14) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* СТРАНИЦА ФЕСТИВАЛИ/МЕРОПРИЯТИЯ */
+    .festivals_container {
+        padding: calc(72px + (45 - 72) * ((100vw - 768px) / (1024 - 768))) calc(50px + (55 - 50) * ((100vw - 768px) / (1024 - 768)));
+        margin-top: -25vh;
+    }
+
+    .festivals_container .top {
+        margin-bottom: calc(75px + (45 - 72) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .festivals_container .top h2 {
+        margin-bottom: calc(30px + (45 - 30) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .festivals .top-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .festivals .top-description .left {
+        font-size: calc(20px + (10 - 20) * ((100vw - 768px) / (1024 - 768)));
+        margin-bottom: calc(75px + (45 - 72) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .festivals-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: calc(50px + (14 - 50) * ((100vw - 768px) / (1024 - 768)));
+        grid-row-gap: calc(35px + (24 - 35) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    .card-item p {
+        margin-top: 14px;
+        font-size: calc(16px + (10 - 16) * ((100vw - 768px) / (1024 - 768)));
+        line-height: 1.3;
+    }
+
+    .festivals-link a {
+        font-size: calc(37px + (20 - 37) * ((100vw - 768px) / (1024 - 768)));
+    }
+
+    /* СТРАНИЦА КОНТАКТЫ */
+    .page-contacts {
+        position: relative;
+        padding: 0;
+    }
+
+    .page-contacts .footer-container_bottom {
+        position: relative;
+        bottom: calc(35px + (50 - 35) * ((100vw - 768px) / (1024 - 768)));
     }
 }
 
-@media (max-width: 800px) {}
+@media (max-width: 520px) {
+    body {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    .wrapper-bigger {
+        padding: 0 20px;
+    }
+
+    .block-margin-top {
+        margin-top: 40px;
+    }
+
+
+    header {
+        font-size: 16px;
+    }
+
+
+    .header-wrapper {
+        padding: 14px 20px;
+    }
+
+    .header-content .burger-btn {
+        width: 38px;
+        height: 22px;
+        margin-right: 15px;
+    }
+
+    .header-content .burger-btn span::before {
+        bottom: -10px;
+    }
+
+    .header-content .burger-btn span::after {
+        top: -10px;
+    }
+
+    .header-content .logo img {
+        width: 100%;
+        max-width: 90px;
+    }
+
+    .top-banner {
+        height: 45vh;
+    }
+
+    .top-banner_container {
+        align-items: flex-start;
+    }
+
+    .top-banner_container .left {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .top-banner_container .right {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+
+    /* НАША  МИССИЯ */
+    .our-mission_container .left {
+        width: 100%;
+    }
+
+    /* КАК ПОПАСТЬ В КАТАЛОГ */
+    .methods-container {
+        grid-column-gap: 10px;
+        grid-row-gap: 34px;
+    }
+
+    .methods-item span {
+        padding: 6px 10px;
+        margin-bottom: 12px;
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .methods-item p {
+        font-size: 14px;
+    }
+
+    /* ПРАВИЛА ЧЛЕНСТВА В АССОЦИАЦИИ */
+    .membership_container .text {
+        max-width: unset;
+    }
+
+    /* БУДУЩИЕ ФЕСТИВАЛИ */
+    .festivals-block {
+        margin-top: 40px;
+    }
+
+    .festivals-block_container {
+        padding: 46px 0;
+    }
+
+    .festivals-block-item {
+        margin: 0 34px;
+        font-size: 14px;
+    }
+
+    .festivals-block-item img {
+        margin-bottom: 12px;
+    }
+
+    .festivals-block-items .slick-prev {
+        left: -1vw;
+    }
+
+    .festivals-block-items .slick-next {
+        right: 1vw;
+    }
+
+    /* НАШИ ПАРТНЕРЫ */
+    .our-partners h2 {
+        margin-bottom: 40px;
+    }
+
+    .marquee img {
+        max-width: 150px;
+        margin: 0 40px;
+    }
+
+    /* Форма */
+    .form {
+        padding: 45px 58px;
+    }
+
+    .form .left {
+        margin-bottom: 25px;
+    }
+
+    .form .left h3 {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .form-control {
+        margin-bottom: 20px;
+    }
+
+    .form-checkbox input {
+        height: 12px;
+        width: 12px;
+    }
+
+    .form-checkbox input::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .form-checkbox input::after {
+        height: 10px;
+        width: 10px;
+    }
+
+    .form-checkbox p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .form_btn-container {
+        margin-top: 25px;
+    }
+
+    .form-btn {
+        padding: 8px 22px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container .right {
+        margin: 5vh 0;
+    }
+
+    .link-items {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: unset;
+        grid-row-gap: 38px;
+    }
+
+    .link-item {
+        max-width: 170px;
+    }
+
+    .link-item p {
+        padding-left: 10px;
+    }
+
+    .link-item a {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .footer-container_bottom {
+        font-size: 14px;
+    }
+
+    .footer-container_bottom a {
+        margin-left: 25px;
+    }
+
+    /* СТРАНИЦА КАТАЛОГ АГЕНСТВ */
+    .tabs-item {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .catalog-container {
+        padding: 40px 20px;
+    }
+
+    .catalog-item {
+        padding: 40px 0;
+    }
+
+    .catalog-item img {
+        width: 180px;
+        margin-bottom: 40px;
+    }
+
+    .catalog-item .text .name-agent {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .catalog-item .text p {
+        font-size: 14px;
+    }
+
+    .catalog-item .link-more {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .catalog-item .link-more::after {
+        margin-bottom: 0.4vh;
+        margin-left: 8px;
+        width: 12px;
+        height: 12px;
+    }
+
+    /* СТРАНИЦА АГЕНСТВА */
+    .agency-container {
+        padding: 70px 50px;
+        margin-top: -25vh;
+    }
+
+    .agency-container .top {
+        flex-direction: column;
+        grid-column-gap: 20px;
+    }
+
+    .agency-container .top .logo-agency img {
+        max-width: 180px;
+    }
+
+    .agency-container .top .description {
+        font-size: 16px;
+        line-height: unset;
+    }
+
+    .agency-container .top .description h2 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+
+    .portfolio-item img {
+        margin-bottom: 12px;
+    }
+
+    .portfolio-item p {
+        font-size: 14px;
+    }
+
+    .agency-video_container {
+        padding: 40px 0;
+    }
+
+    /* СТРАНИЦА РЕЙТИНГА */
+    .rating-table {
+        margin: 40px 0;
+        overflow-x: scroll;
+    }
+
+    .rating-table_row {
+        grid-template-columns: repeat(1, 0.5fr) repeat(1, 1fr) repeat(4, 1fr);
+        grid-column-gap: 5px;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    /* СТРАНИЦА ФЕСТИВАЛИ/МЕРОПРИЯТИЯ */
+    .festivals_container {
+        padding: 40px 20px;
+        margin-top: -25vh;
+    }
+
+    .festivals_container .top {
+        margin-bottom: 40px;
+    }
+
+    .festivals_container .top h2 {
+        margin-bottom: 20px;
+    }
+
+    .festivals .top-description .left {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .festivals-cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: unset;
+        grid-row-gap: 20px;
+    }
+
+    .card-item {
+        max-width: 230px;
+    }
+
+    .card-item img {
+        max-width: 135px;
+    }
+
+    .card-item p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .festivals-link img {
+        height: 25vh;
+    }
+
+    .festivals-link a {
+        font-size: 20px;
+    }
+
+    /* СТРАНИЦА КОНТАКТЫ */
+    /* .page-contacts .footer-container_bottom {
+        bottom: 30px;
+    } */
+}
