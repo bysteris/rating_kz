@@ -964,8 +964,13 @@
     }
 
     /* СТРАНИЦА КАТАЛОГ АГЕНСТВ */
+    .tabs {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+    }
     .tabs-item {
-        padding: 10px 0;
+        padding: 10px 40px;
         font-size: 16px;
     }
 
