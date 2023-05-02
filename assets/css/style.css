@@ -329,6 +329,10 @@ header {
   display: flex;
 }
 
+.festivals-block-items a:hover .festivals-block-item {
+  color: #1AB0CF;
+}
+
 .festivals-block-items.slick-slider {
   margin-bottom: 0;
 }
@@ -622,7 +626,7 @@ footer {
 }
 
 .link-item a:hover {
- color: #1AB0CF;
+  color: #1AB0CF;
 }
 
 .footer-container_bottom {
@@ -695,11 +699,39 @@ footer {
   display: block;
   margin-right: calc(30px + (40 - 30) * ((100vw - 1440px) / (1920 - 1440)));
   width: calc(125px + (167 - 125) * ((100vw - 1440px) / (1920 - 1440)));
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: transform 0.4s ease;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
 }
 
 .catalog-item .text .name-agent {
+  display: inline-block;
   margin-bottom: calc(10px + (14 - 10) * ((100vw - 1440px) / (1920 - 1440)));
-  text-decoration: underline;
+}
+
+.catalog-item .text .name-agent::after {
+  background-color: #1AB0CF;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out, background-color 1s;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width .3s ease-in-out, background-color 1s;
+  -moz-transition: width .3s ease-in-out, background-color 1s;
+  -ms-transition: width .3s ease-in-out, background-color 1s;
+  -o-transition: width .3s ease-in-out, background-color 1s;
+}
+
+.catalog-item:hover .text .name-agent::after {
+  width: 100%;
 }
 
 .catalog-item .text p {
@@ -712,7 +744,29 @@ footer {
   align-items: flex-end;
   font-size: calc(12px + (16 - 12) * ((100vw - 1440px) / (1920 - 1440)));
   color: #1AB0CF;
-  text-decoration: underline;
+  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+  -moz-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  -o-transform: translateX(-10%);
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
+  -moz-transition: transform .3s ease-in-out;
+  -ms-transition: transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+}
+
+.catalog-item:hover .link-more {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
+  -moz-transition: transform .3s ease-in-out;
+  -ms-transition: transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
 }
 
 .catalog-item .link-more::after {
@@ -725,6 +779,24 @@ footer {
   width: calc(10px + (15 - 10) * ((100vw - 1440px) / (1920 - 1440)));
   height: calc(10px + (15 - 10) * ((100vw - 1440px) / (1920 - 1440)));
 }
+
+.catalog-item:hover img {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transition: transform 0.4s ease;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+}
+
+.catalog-item:hover .text .name-agent {
+  color: #1AB0CF;
+}
+
 
 /* СТРАНИЦА АГЕНСТВА */
 .banner-agency {
